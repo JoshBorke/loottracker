@@ -1,0 +1,52 @@
+local debug = false
+LootTrackerLocals = setmetatable({
+	['Add Item'] = 'Add Item',
+	['Add Set'] = 'Add Set',
+	['Advanced Tracker Options'] = 'Advance Tracker Options',
+	['Background Alpha'] = 'Background Alpha',
+	['Current toon count only'] = 'Current toon count only',
+	['Del Item'] = 'Del Item',
+	['Edit Item' ] = 'Edit Item',
+	['Global Tracker Options'] = 'Global Tracker Options',
+	['Hide if incomplete'] = 'Hide if incomplete',
+	['Hide if no items available'] = 'Hide if no items available',
+	['Hide in combat'] = 'Hide in combat',
+	['Hint:  Shift click to add to tracker'] = 'Hint:  Shift click to add to tracker',
+	['Hint:  Shift click to remove from tracker'] = 'Hint:  Shift click to remove from tracker',
+	['Lock advanced tracker'] = 'Lock advanced tracker',
+	['Lock Tracker'] = 'Lock Tracker',
+	['LootTracker: Invalid item entered.'] = 'LootTracker: Invalid item entered.',
+	['Remove Set'] = 'Remove Set',
+	['Rename Set' ] = 'Rename Set',
+	['Sets'] = 'Sets',
+	['Show advanced tracker'] = 'Show advanced tracker',
+	['Show normal tracker'] = 'Show normal tracker',
+	['Squish numbers to name'] = 'Squish numbers to name',
+	['Standard Tracker Options'] = 'Standard Tracker Options',
+	['Toggle Config'] = 'Toggle Config',
+	['Toggle Tracker'] = 'Toggle Tracker',
+	['Use this checkbox to force item counts next to the item name'] = 'Use this checkbox to force item counts next to the item name',
+	['Use this checkbox to hide the advanced tracker'] = 'Use this checkbox to hide the advanced tracker',
+	['Use this checkbox to hide the item in the tracker if the goal has not been met'] = 'Use this checkbox to hide the item in the tracker if the goal has not been met',
+	['Use this checkbox to hide the item in the tracker if there are no items available'] = 'Use this checkbox to hide the item in the tracker if there are no items available',
+	['Use this checkbox to hide the normal tracker'] = 'Use this checkbox to hide the normal tracker',
+	['Use this checkbox to hide the tracker while in combat'] = 'Use this checkbox to hide the tracker while in combat',
+	['Use this checkbox to lock the tracker in its current position'] = 'Use this checkbox to lock the tracker in its current position',
+	['Use this checkbox to only show item totals from current toon'] = 'Use this checkbox to only show item totals from current toon',
+	['Use this checkbox to separate item counts from the item name'] = 'Use this checkbox to separate item counts from the item name',
+	['Use this checkbox to show item totals from all toons'] = 'Use this checkbox to show item totals from all toons',
+	['Use this checkbox to show the advanced tracker'] = 'Use this checkbox to show the advanced tracker',
+	['Use this checkbox to show the item in the tracker even if the goal has not been met'] = 'Use this checkbox to show the item in the tracker even if the goal has not been met',
+	['Use this checkbox to show the item in the tracker even if there are no items available'] = 'Use this checkbox to show the item in the tracker even if there are no items available',
+	['Use this checkbox to show the normal tracker'] = 'Use this checkbox to show the normal tracker',
+	['Use this checkbox to show the tracker while in combat'] = 'Use this checkbox to show the tracker while in combat',
+	['Use this checkbox to unlock the tracker'] = 'Use this checkbox to unlock the tracker',
+	['Use this slider to change the transparency of the background for the tracker'] = 'Use this slider to change the transparency of the background for the tracker',
+	['Visuals'] = 'Visuals',
+}, {__index = function(self, key)
+	rawset(self, key, key)
+	if debug then
+		ChatFrame1:AddMessage("Missing "..tostring(key))
+	end
+	return key
+end})

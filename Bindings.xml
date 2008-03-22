@@ -1,0 +1,8 @@
+<Bindings>
+	<Binding name="LTTOGGLECONFIG" header="LOOTTRACKER">
+		LootTracker:ToggleConfig()
+	</Binding>
+	<Binding name="LTTOGGLETRACK">
+		LootTracker:ToggleTracker()
+	</Binding>
+</Bindings>

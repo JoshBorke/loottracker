@@ -1,0 +1,17 @@
+## Interface: 20200
+## Title: LootTracker
+## Version: 1.08-20200
+## Notes: This provides a frame that will show you what loot you are tracking and how much you have of it.
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## SavedVariables: LootTrackerDB
+## OptionalDeps: OptionHouse, ClickTip
+
+libs\Dongle.lua
+libs\OptionHouse.lua
+libs\LocaleQuery.lua
+
+Localization.enUS.lua
+Localization.deDE.lua
+
+LootTracker.lua
